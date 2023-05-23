@@ -192,6 +192,9 @@ android {
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
+    implementation 'com.facebook.react:react-native:0.63.4'  // <- версия может быть разной
+    implementation 'com.swmansion.gesturehandler:gesture-handler:1.10.3'
+
 
     def isGifEnabled = (findProperty('expo.gif.enabled') ?: "") == "true";
     def isWebpEnabled = (findProperty('expo.webp.enabled') ?: "") == "true";
